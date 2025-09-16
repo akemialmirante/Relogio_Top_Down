@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\gatao\Documents\lucas\Teste_sv\simulation\qsim
+vrelogio
+Z1 I2kL6lVV4CTXY:4P4zV@nP2
+Z2 VBdnZT3;Pjb148mbXkk6]72
+Z3 dC:\Users\gatao\Documents\lucas\Code\Teste_sv\simulation\qsim
+Z4 w1757985571
+Z5 8relogio.vo
+Z6 Frelogio.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|relogio.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 1V2kdUKhmanYDOR5:eA@?2
+!s85 0
+Z11 !s108 1757985572.471000
+Z12 !s107 relogio.vo|
+!s101 -O0
+vrelogio_vlg_check_tst
+!i10b 1
+Z13 !s100 F<kKzKlVUGW[aVh0oo`8S2
+Z14 IeYlRFP@ik_NoN5H0?Ii:O3
+Z15 V522?g1AE@D<8Bg[XSMHTd2
+R3
+Z16 w1757985570
+Z17 8relogio.vt
+Z18 Frelogio.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z19 !s108 1757985572.641000
+Z20 !s107 relogio.vt|
+Z21 !s90 -work|work|relogio.vt|
+!s101 -O0
+R9
+vrelogio_vlg_sample_tst
+!i10b 1
+Z22 !s100 U80idCJ_?[LA@M8nUAk4L3
+Z23 IFNl1fN?^I9><U^Lb?o0IT3
+Z24 VAdRDH0gUe2L1_T>:JT;YG2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vrelogio_vlg_vec_tst
+!i10b 1
+Z25 !s100 J``HdTH7jXjB^TR2cQCH:3
+Z26 INVoKF;DD6[SlK]S1Yzk4=3
+Z27 VZZ3>XR88@Gf@Y8[F9B8f42
+R3
+R16
+R17
+R18
+Z28 L0 931
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

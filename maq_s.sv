@@ -1,0 +1,34 @@
+module maq_s (
+input logic clk,
+input logic rst,
+output logic [3:0] bcd_s_lsd, //unidade
+output logic [2:0] bcd_s_msd, //dezena
+output logic incrementa_minuto //flag
+);
+
+always_ff @(posedge clk, negedge rst) begin
+	if (!rst) begin
+		//bcd_s_lsd <= 4'd0;
+		//bcd_s_msd <= 3'd0;
+		bcd_s_lsd <= 4'd8; //debug
+		bcd_s_msd <= 3'd5;
+		incrementa_minuto <=1'b0;
+	end else begin
+		incrementa_minuto <= 1'b0; //default
+		
+		if (bcd_s_lsd == 9) begin
+			bcd_s_lsd <= 0;
+			
+			if(bcd_s_msd == 5) begin
+				bcd_s_msd <= 0;
+				incrementa_minuto <= 1'b1; //flag min
+			end else begin
+				bcd_s_msd <= bcd_s_msd + 1;
+			end
+		end else begin
+			bcd_s_lsd <= bcd_s_lsd + 1;
+		end
+	end
+end
+
+endmodule
