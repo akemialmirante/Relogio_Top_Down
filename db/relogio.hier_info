@@ -102,7 +102,6 @@ clk_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio|maq_s:segundos
-clk => incrementa_minuto~reg0.CLK
 clk => bcd_s_msd[0]~reg0.CLK
 clk => bcd_s_msd[1]~reg0.CLK
 clk => bcd_s_msd[2]~reg0.CLK
@@ -110,7 +109,6 @@ clk => bcd_s_lsd[0]~reg0.CLK
 clk => bcd_s_lsd[1]~reg0.CLK
 clk => bcd_s_lsd[2]~reg0.CLK
 clk => bcd_s_lsd[3]~reg0.CLK
-rst => incrementa_minuto~reg0.ACLR
 rst => bcd_s_msd[0]~reg0.PRESET
 rst => bcd_s_msd[1]~reg0.ACLR
 rst => bcd_s_msd[2]~reg0.PRESET
@@ -125,11 +123,10 @@ bcd_s_lsd[3] <= bcd_s_lsd[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 bcd_s_msd[0] <= bcd_s_msd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 bcd_s_msd[1] <= bcd_s_msd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 bcd_s_msd[2] <= bcd_s_msd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-incrementa_minuto <= incrementa_minuto~reg0.DB_MAX_OUTPUT_PORT_TYPE
+incrementa_minuto <= incrementa_minuto.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio|maq_m:minutos
-clk => incrementa_hora~reg0.CLK
 clk => bcd_m_msd[0]~reg0.CLK
 clk => bcd_m_msd[1]~reg0.CLK
 clk => bcd_m_msd[2]~reg0.CLK
@@ -137,15 +134,14 @@ clk => bcd_m_lsd[0]~reg0.CLK
 clk => bcd_m_lsd[1]~reg0.CLK
 clk => bcd_m_lsd[2]~reg0.CLK
 clk => bcd_m_lsd[3]~reg0.CLK
-rst => incrementa_hora~reg0.ACLR
-rst => bcd_m_msd[0]~reg0.PRESET
+rst => bcd_m_msd[0]~reg0.ACLR
 rst => bcd_m_msd[1]~reg0.ACLR
-rst => bcd_m_msd[2]~reg0.PRESET
+rst => bcd_m_msd[2]~reg0.ACLR
 rst => bcd_m_lsd[0]~reg0.PRESET
 rst => bcd_m_lsd[1]~reg0.ACLR
 rst => bcd_m_lsd[2]~reg0.ACLR
 rst => bcd_m_lsd[3]~reg0.PRESET
-incrementa_minuto => incrementa_hora.OUTPUTSELECT
+incrementa_minuto => incrementa_hora.IN1
 incrementa_minuto => bcd_m_lsd[3]~reg0.ENA
 incrementa_minuto => bcd_m_lsd[2]~reg0.ENA
 incrementa_minuto => bcd_m_lsd[1]~reg0.ENA
@@ -160,7 +156,7 @@ bcd_m_lsd[3] <= bcd_m_lsd[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 bcd_m_msd[0] <= bcd_m_msd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 bcd_m_msd[1] <= bcd_m_msd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 bcd_m_msd[2] <= bcd_m_msd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-incrementa_hora <= incrementa_hora~reg0.DB_MAX_OUTPUT_PORT_TYPE
+incrementa_hora <= incrementa_hora.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio|maq_h:horas

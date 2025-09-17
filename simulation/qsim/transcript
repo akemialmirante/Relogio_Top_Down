@@ -30,4 +30,4 @@
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
 # ** Note: $finish    : relogio.vt(927)
-#    Time: 1 us  Iteration: 0  Instance: /relogio_vlg_vec_tst/tb_out
+#    Time: 200 ns  Iteration: 0  Instance: /relogio_vlg_vec_tst/tb_out

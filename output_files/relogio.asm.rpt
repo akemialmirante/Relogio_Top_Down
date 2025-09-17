@@ -1,5 +1,5 @@
 Assembler report for relogio
-Mon Sep 15 22:19:16 2025
+Tue Sep 16 21:24:48 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Teste_sv/output_files/relogio.sof
-  6. Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Teste_sv/output_files/relogio.pof
+  5. Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Relogio/output_files/relogio.sof
+  6. Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Relogio/output_files/relogio.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Sep 15 22:19:16 2025 ;
+; Assembler Status      ; Successful - Tue Sep 16 21:24:48 2025 ;
 ; Revision Name         ; relogio                               ;
 ; Top-level Entity Name ; relogio                               ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------+
-; Assembler Generated Files                                             ;
-+-----------------------------------------------------------------------+
-; File Name                                                             ;
-+-----------------------------------------------------------------------+
-; C:/Users/gatao/Documents/lucas/Code/Teste_sv/output_files/relogio.sof ;
-; C:/Users/gatao/Documents/lucas/Code/Teste_sv/output_files/relogio.pof ;
-+-----------------------------------------------------------------------+
++----------------------------------------------------------------------+
+; Assembler Generated Files                                            ;
++----------------------------------------------------------------------+
+; File Name                                                            ;
++----------------------------------------------------------------------+
+; C:/Users/gatao/Documents/lucas/Code/Relogio/output_files/relogio.sof ;
+; C:/Users/gatao/Documents/lucas/Code/Relogio/output_files/relogio.pof ;
++----------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Teste_sv/output_files/relogio.sof ;
-+----------------+--------------------------------------------------------------------------------+
-; Option         ; Setting                                                                        ;
-+----------------+--------------------------------------------------------------------------------+
-; Device         ; EP2C5T144C6                                                                    ;
-; JTAG usercode  ; 0x0007EDC8                                                                     ;
-; Checksum       ; 0x0007EDC8                                                                     ;
-+----------------+--------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Relogio/output_files/relogio.sof ;
++----------------+-------------------------------------------------------------------------------+
+; Option         ; Setting                                                                       ;
++----------------+-------------------------------------------------------------------------------+
+; Device         ; EP2C5T144C6                                                                   ;
+; JTAG usercode  ; 0x00080BC0                                                                    ;
+; Checksum       ; 0x00080BC0                                                                    ;
++----------------+-------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Teste_sv/output_files/relogio.pof ;
-+--------------------+----------------------------------------------------------------------------+
-; Option             ; Setting                                                                    ;
-+--------------------+----------------------------------------------------------------------------+
-; Device             ; EPCS4                                                                      ;
-; JTAG usercode      ; 0x00000000                                                                 ;
-; Checksum           ; 0x0751F274                                                                 ;
-; Compression Ratio  ; 3                                                                          ;
-+--------------------+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/gatao/Documents/lucas/Code/Relogio/output_files/relogio.pof ;
++--------------------+---------------------------------------------------------------------------+
+; Option             ; Setting                                                                   ;
++--------------------+---------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                     ;
+; JTAG usercode      ; 0x00000000                                                                ;
+; Checksum           ; 0x07508A50                                                                ;
+; Compression Ratio  ; 3                                                                         ;
++--------------------+---------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Sep 15 22:19:15 2025
+    Info: Processing started: Tue Sep 16 21:24:46 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off relogio -c relogio
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4537 megabytes
-    Info: Processing ended: Mon Sep 15 22:19:16 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Tue Sep 16 21:24:48 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

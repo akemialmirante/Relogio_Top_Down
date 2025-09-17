@@ -1,5 +1,5 @@
 EDA Netlist Writer report for relogio
-Mon Sep 15 22:19:31 2025
+Tue Sep 16 21:26:30 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Sep 15 22:19:31 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue Sep 16 21:26:30 2025 ;
 ; Revision Name             ; relogio                               ;
 ; Top-level Entity Name     ; relogio                               ;
 ; Family                    ; Cyclone II                            ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; Simulation Generated Files                                                  ;
-+-----------------------------------------------------------------------------+
-; Generated Files                                                             ;
-+-----------------------------------------------------------------------------+
-; C:/Users/gatao/Documents/lucas/Code/Teste_sv/simulation/modelsim/relogio.vo ;
-+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Simulation Generated Files                                                 ;
++----------------------------------------------------------------------------+
+; Generated Files                                                            ;
++----------------------------------------------------------------------------+
+; C:/Users/gatao/Documents/lucas/Code/Relogio/simulation/modelsim/relogio.vo ;
++----------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Sep 15 22:19:30 2025
+    Info: Processing started: Tue Sep 16 21:26:29 2025
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog relogio -c relogio
-Info (204019): Generated file relogio.vo in folder "C:/Users/gatao/Documents/lucas/Code/Teste_sv/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file relogio.vo in folder "C:/Users/gatao/Documents/lucas/Code/Relogio/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4515 megabytes
-    Info: Processing ended: Mon Sep 15 22:19:31 2025
+    Info: Processing ended: Tue Sep 16 21:26:30 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
