@@ -9,7 +9,7 @@ module maq_m(
 
 always_ff @(posedge clk or negedge rst) begin
 	if (!rst) begin
-		bcd_m_lsd <= 4'd9;
+		bcd_m_lsd <= 4'd0;
 		bcd_m_msd <= 3'd0;
 	end else begin
 		if(incrementa_minuto)begin
