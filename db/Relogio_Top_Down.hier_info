@@ -1,0 +1,272 @@
+|relogio
+rst => rst.IN4
+clk => clk.IN1
+bcd_s_unid[0] <= bcd:disp0.display
+bcd_s_unid[1] <= bcd:disp0.display
+bcd_s_unid[2] <= bcd:disp0.display
+bcd_s_unid[3] <= bcd:disp0.display
+bcd_s_unid[4] <= bcd:disp0.display
+bcd_s_unid[5] <= bcd:disp0.display
+bcd_s_unid[6] <= bcd:disp0.display
+bcd_s_dez[0] <= bcd:disp1.display
+bcd_s_dez[1] <= bcd:disp1.display
+bcd_s_dez[2] <= bcd:disp1.display
+bcd_s_dez[3] <= bcd:disp1.display
+bcd_s_dez[4] <= bcd:disp1.display
+bcd_s_dez[5] <= bcd:disp1.display
+bcd_s_dez[6] <= bcd:disp1.display
+bcd_m_unid[0] <= bcd:disp2.display
+bcd_m_unid[1] <= bcd:disp2.display
+bcd_m_unid[2] <= bcd:disp2.display
+bcd_m_unid[3] <= bcd:disp2.display
+bcd_m_unid[4] <= bcd:disp2.display
+bcd_m_unid[5] <= bcd:disp2.display
+bcd_m_unid[6] <= bcd:disp2.display
+bcd_m_dez[0] <= bcd:disp3.display
+bcd_m_dez[1] <= bcd:disp3.display
+bcd_m_dez[2] <= bcd:disp3.display
+bcd_m_dez[3] <= bcd:disp3.display
+bcd_m_dez[4] <= bcd:disp3.display
+bcd_m_dez[5] <= bcd:disp3.display
+bcd_m_dez[6] <= bcd:disp3.display
+bcd_h_unid[0] <= bcd:disp4.display
+bcd_h_unid[1] <= bcd:disp4.display
+bcd_h_unid[2] <= bcd:disp4.display
+bcd_h_unid[3] <= bcd:disp4.display
+bcd_h_unid[4] <= bcd:disp4.display
+bcd_h_unid[5] <= bcd:disp4.display
+bcd_h_unid[6] <= bcd:disp4.display
+bcd_h_dez[0] <= bcd:disp5.display
+bcd_h_dez[1] <= bcd:disp5.display
+bcd_h_dez[2] <= bcd:disp5.display
+bcd_h_dez[3] <= bcd:disp5.display
+bcd_h_dez[4] <= bcd:disp5.display
+bcd_h_dez[5] <= bcd:disp5.display
+bcd_h_dez[6] <= bcd:disp5.display
+
+
+|relogio|divisor:u_divisor
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => count[8].ACLR
+rst => count[9].ACLR
+rst => count[10].ACLR
+rst => count[11].ACLR
+rst => count[12].ACLR
+rst => count[13].ACLR
+rst => count[14].ACLR
+rst => count[15].ACLR
+rst => count[16].ACLR
+rst => count[17].ACLR
+rst => count[18].ACLR
+rst => count[19].ACLR
+rst => count[20].ACLR
+rst => count[21].ACLR
+rst => count[22].ACLR
+rst => count[23].ACLR
+rst => count[24].ACLR
+rst => count[25].ACLR
+clk_in => count[0].CLK
+clk_in => count[1].CLK
+clk_in => count[2].CLK
+clk_in => count[3].CLK
+clk_in => count[4].CLK
+clk_in => count[5].CLK
+clk_in => count[6].CLK
+clk_in => count[7].CLK
+clk_in => count[8].CLK
+clk_in => count[9].CLK
+clk_in => count[10].CLK
+clk_in => count[11].CLK
+clk_in => count[12].CLK
+clk_in => count[13].CLK
+clk_in => count[14].CLK
+clk_in => count[15].CLK
+clk_in => count[16].CLK
+clk_in => count[17].CLK
+clk_in => count[18].CLK
+clk_in => count[19].CLK
+clk_in => count[20].CLK
+clk_in => count[21].CLK
+clk_in => count[22].CLK
+clk_in => count[23].CLK
+clk_in => count[24].CLK
+clk_in => count[25].CLK
+clk_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|maq_s:segundos
+clk => bcd_s_msd[0]~reg0.CLK
+clk => bcd_s_msd[1]~reg0.CLK
+clk => bcd_s_msd[2]~reg0.CLK
+clk => bcd_s_lsd[0]~reg0.CLK
+clk => bcd_s_lsd[1]~reg0.CLK
+clk => bcd_s_lsd[2]~reg0.CLK
+clk => bcd_s_lsd[3]~reg0.CLK
+rst => bcd_s_msd[0]~reg0.ACLR
+rst => bcd_s_msd[1]~reg0.ACLR
+rst => bcd_s_msd[2]~reg0.ACLR
+rst => bcd_s_lsd[0]~reg0.ACLR
+rst => bcd_s_lsd[1]~reg0.ACLR
+rst => bcd_s_lsd[2]~reg0.ACLR
+rst => bcd_s_lsd[3]~reg0.ACLR
+bcd_s_lsd[0] <= bcd_s_lsd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_s_lsd[1] <= bcd_s_lsd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_s_lsd[2] <= bcd_s_lsd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_s_lsd[3] <= bcd_s_lsd[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_s_msd[0] <= bcd_s_msd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_s_msd[1] <= bcd_s_msd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_s_msd[2] <= bcd_s_msd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+incrementa_minuto <= incrementa_minuto.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|maq_m:minutos
+clk => bcd_m_msd[0]~reg0.CLK
+clk => bcd_m_msd[1]~reg0.CLK
+clk => bcd_m_msd[2]~reg0.CLK
+clk => bcd_m_lsd[0]~reg0.CLK
+clk => bcd_m_lsd[1]~reg0.CLK
+clk => bcd_m_lsd[2]~reg0.CLK
+clk => bcd_m_lsd[3]~reg0.CLK
+rst => bcd_m_msd[0]~reg0.ACLR
+rst => bcd_m_msd[1]~reg0.ACLR
+rst => bcd_m_msd[2]~reg0.ACLR
+rst => bcd_m_lsd[0]~reg0.ACLR
+rst => bcd_m_lsd[1]~reg0.ACLR
+rst => bcd_m_lsd[2]~reg0.ACLR
+rst => bcd_m_lsd[3]~reg0.ACLR
+incrementa_minuto => incrementa_hora.IN1
+incrementa_minuto => bcd_m_lsd[3]~reg0.ENA
+incrementa_minuto => bcd_m_lsd[2]~reg0.ENA
+incrementa_minuto => bcd_m_lsd[1]~reg0.ENA
+incrementa_minuto => bcd_m_lsd[0]~reg0.ENA
+incrementa_minuto => bcd_m_msd[2]~reg0.ENA
+incrementa_minuto => bcd_m_msd[1]~reg0.ENA
+incrementa_minuto => bcd_m_msd[0]~reg0.ENA
+bcd_m_lsd[0] <= bcd_m_lsd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_m_lsd[1] <= bcd_m_lsd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_m_lsd[2] <= bcd_m_lsd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_m_lsd[3] <= bcd_m_lsd[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_m_msd[0] <= bcd_m_msd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_m_msd[1] <= bcd_m_msd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_m_msd[2] <= bcd_m_msd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+incrementa_hora <= incrementa_hora.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|maq_h:horas
+clk => bcd_h_msd[0]~reg0.CLK
+clk => bcd_h_msd[1]~reg0.CLK
+clk => bcd_h_lsd[0]~reg0.CLK
+clk => bcd_h_lsd[1]~reg0.CLK
+clk => bcd_h_lsd[2]~reg0.CLK
+clk => bcd_h_lsd[3]~reg0.CLK
+rst => bcd_h_msd[0]~reg0.ACLR
+rst => bcd_h_msd[1]~reg0.ACLR
+rst => bcd_h_lsd[0]~reg0.ACLR
+rst => bcd_h_lsd[1]~reg0.ACLR
+rst => bcd_h_lsd[2]~reg0.ACLR
+rst => bcd_h_lsd[3]~reg0.ACLR
+incrementa_hora => bcd_h_msd[0]~reg0.ENA
+incrementa_hora => bcd_h_lsd[3]~reg0.ENA
+incrementa_hora => bcd_h_lsd[2]~reg0.ENA
+incrementa_hora => bcd_h_lsd[1]~reg0.ENA
+incrementa_hora => bcd_h_lsd[0]~reg0.ENA
+incrementa_hora => bcd_h_msd[1]~reg0.ENA
+bcd_h_lsd[0] <= bcd_h_lsd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_h_lsd[1] <= bcd_h_lsd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_h_lsd[2] <= bcd_h_lsd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_h_lsd[3] <= bcd_h_lsd[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_h_msd[0] <= bcd_h_msd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_h_msd[1] <= bcd_h_msd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|bcd:disp0
+bcd_in[0] => Decoder0.IN3
+bcd_in[1] => Decoder0.IN2
+bcd_in[2] => Decoder0.IN1
+bcd_in[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|bcd:disp1
+bcd_in[0] => Decoder0.IN3
+bcd_in[1] => Decoder0.IN2
+bcd_in[2] => Decoder0.IN1
+bcd_in[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|bcd:disp2
+bcd_in[0] => Decoder0.IN3
+bcd_in[1] => Decoder0.IN2
+bcd_in[2] => Decoder0.IN1
+bcd_in[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|bcd:disp3
+bcd_in[0] => Decoder0.IN3
+bcd_in[1] => Decoder0.IN2
+bcd_in[2] => Decoder0.IN1
+bcd_in[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|bcd:disp4
+bcd_in[0] => Decoder0.IN3
+bcd_in[1] => Decoder0.IN2
+bcd_in[2] => Decoder0.IN1
+bcd_in[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio|bcd:disp5
+bcd_in[0] => Decoder0.IN3
+bcd_in[1] => Decoder0.IN2
+bcd_in[2] => Decoder0.IN1
+bcd_in[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
